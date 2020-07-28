@@ -1,0 +1,315 @@
+a{
+  text-decoration: none;
+  margin: auto 20px  ;
+}
+a:hover{
+  color: #d6e6f2;
+}
+
+body {
+  margin: 0;
+  /*font-family from csfontstack.com
+  /*font-family: TimesNewRoman,"Times New Roman",Times,Baskerville,Georgia,serif*/
+  /*font-family: Georgia,Times,"Times New Roman",serif*/
+  /*it's bigger*/
+  /*font-family: Arial,"Helvetica Neue",Helvetica,sans-serif*/
+  /*font-family: Verdana,Geneva,sans-serif/*it's bigger*/
+  /*embedding special fonts from fonts.google.com*/
+  font-family: 'Merriweather Sans', sans-serif;
+  /*for the body text*/
+  color: #112d4e;
+}
+
+h1 {
+  font-size: 500%;
+  /* 16px = 1 em = 100%*/
+  margin: 25px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  /*for h1*/
+  color: #1353A1; /*#558DD1;*//*#3f72af;*/
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  /*for headers h2, h3*/
+  /*font-size: 1.5rem;*/
+  color: #1353A1; /*#233b6e;*/
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  /*for headers h2, h3*/
+  color: #163172;
+}
+
+h4 {
+  /*  margin: 0 auto 10px auto;*/
+  line-height: 1;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  width: 3%;
+  border-width: 6px;
+  color: #d6e6f2;
+  margin: 75px auto;
+}
+
+ol {
+  text-align: left;
+  width: 94.6%;
+  position: relative;
+}
+
+p{
+  line-height: 2;
+}
+
+ul li {
+  text-align: left;
+  width: 100%;
+  /*left: -5%;*/
+  position: relative;
+  /*left: 0%; à utiliser si la larger est moins de 100%*/
+  /*  Explications:*/
+  /*first we make text-align: left -----> text can be beside dotted bullet
+then we make width: 40% -------> ul now has 40% width from its container(ex:div)
+then we make position: relative —> to can move ul to any position relative to its current position
+then we make left: 30% —> move ul to left 30% from current position,
+to move it to center of container,why this number?
+first ul has width= 40% so remaining 100-40=60
+now to make it center divide number 60/2=30
+all width= 30% left, 40% ul , 30% remaining … now this position is in center*/
+}
+
+.anti-float {
+  clear: left;
+  /*using clear only to get the text block ul & li together*/
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 280px;
+  left: 350px;
+}
+
+.bottom-container {
+  text-align: center;
+  background-color: #1353A1;
+/*  height: 120px;*/
+  padding-top: 50px;
+}
+
+.btn-contact {
+  margin: 20px auto 40px;
+  background: #63A7F8;
+  background-image: -webkit-linear-gradient(top, #63A7F8, #0B2971);
+  background-image: -moz-linear-gradient(top, #63A7F8, #0B2971);
+  background-image: -ms-linear-gradient(top, #63A7F8, #0B2971);
+  background-image: -o-linear-gradient(top, #63A7F8, #0B2971);
+  background-image: linear-gradient(to bottom, #63A7F8, #0B2971);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  height: 50px;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 229px;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 27px;
+  border: solid #337FED 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-contact:hover {
+   border: solid #337FED 1px;
+   background: #61A6F5;
+   background-image: -webkit-linear-gradient(top, #61A6F5, #1B6BEB);
+   background-image: -moz-linear-gradient(top, #61A6F5, #1B6BEB);
+   background-image: -ms-linear-gradient(top, #61A6F5, #1B6BEB);
+   background-image: -o-linear-gradient(top, #61A6F5, #1B6BEB);
+   background-image: linear-gradient(to bottom, #61A6F5, #1B6BEB);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.btn-frm {
+  margin: 20px auto 40px;
+  background: #63A7F8;
+  background-image: -webkit-linear-gradient(top, #63A7F8, #0B2971);
+  background-image: -moz-linear-gradient(top, #63A7F8, #0B2971);
+  background-image: -ms-linear-gradient(top, #63A7F8, #0B2971);
+  background-image: -o-linear-gradient(top, #63A7F8, #0B2971);
+  background-image: linear-gradient(to bottom, #63A7F8, #0B2971);
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  height: 50px;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-family: 'Merriweather Sans', sans-serif;
+  width: 229px;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 27px;
+  border: solid #337FED 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-frm:hover {
+   border: solid #337FED 1px;
+   background: #61A6F5;
+   background-image: -webkit-linear-gradient(top, #61A6F5, #1B6BEB);
+   background-image: -moz-linear-gradient(top, #61A6F5, #1B6BEB);
+   background-image: -ms-linear-gradient(top, #61A6F5, #1B6BEB);
+   background-image: -o-linear-gradient(top, #61A6F5, #1B6BEB);
+   background-image: linear-gradient(to bottom, #61A6F5, #1B6BEB);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.contact-frm {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.contact-txt{
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  margin: 20px auto 40px;
+}
+
+.copyright {
+  color: #d6e6f2;
+  padding: 20px 0 40px 0;
+  font-size: .75rem;
+
+}
+
+.courses {
+  text-align: center;
+}
+
+.displaying-inline {
+  display: inline;
+}
+
+.e-learning-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+  /*in conjonction to .list if desired*/
+}
+
+.font-weight {
+  font-weight: normal;
+}
+
+.footer-links {
+  color: #001939;
+  margin: 10px 20px;
+}
+
+.fruits {
+  width: 50%;
+  margin: 50px auto 50px auto;
+  text-align: center;
+  line-height: 2;
+/*  left: 25px;*/
+}
+
+.fruits-img {
+  width: 25%;
+}
+
+.fruits-tbl {
+  text-align: left;
+  padding-left: 225px;
+  /*padding-right: 135px;*/
+}
+
+.fruits-tbl-bodies {
+  padding: 20px;
+}
+
+.h4 {
+  font-size: 1.5rem;
+  /* 40px / 16 px = 2.5em = 2.5 rem = 250%*/
+}
+
+.h4-color {
+  color: #3f72af;
+  /*#769fcd;*/
+}
+
+.hobbies {
+  width: 40%;
+  margin: 50px auto 50px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.hobbies-img {
+  width: 25%;
+  float: right;
+}
+
+/*.list{*/
+/*  margin-left: 180px; /* 150px + la marge-droite de l'image*/
+/*}   on place cette marge sur le texte qui dépasse l'image si on veut le texte à droite*/
+/* avec le float */
+.learning {
+  width: 50%;
+  margin: 50px auto 50px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.middle-container {
+  padding-left: 50px;
+  background-color: #f7fbfc;
+  text-align: center;
+}
+
+.profile-txt {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+}
+
+.profile-img {
+  width: auto;
+  height: 250px;
+  margin: 100px auto 50px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 350px;
+  top: 50px;
+}
+
+.top-container {
+  background-color: #d6e6f2;
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+}
